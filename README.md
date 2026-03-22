@@ -17,6 +17,7 @@ While exploring the data, I discovered interesting patterns that shaped the dire
 Build a machine learning model to accurately predict developers' AI acceptance level (Low/Medium), identify key influencing factors through feature importance analysis, and provide data-driven insights for companies developing AI developer tools.
 
 ## Project Structure
+```
 Machine_Learning_FinalProject/
 ├── StackOverFlow_Survey_Analysis.ipynb
 ├── README.md
@@ -25,6 +26,7 @@ Machine_Learning_FinalProject/
 	├── survey_results_public.csv
 	├── survey_results_schema.csv
 	└── 2025_Developer_Survey_Tool.pdf
+```
 
 
 ## Data Understanding

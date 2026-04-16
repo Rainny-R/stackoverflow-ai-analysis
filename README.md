@@ -2,6 +2,10 @@
 
 This document serves both as **repository documentation** and a **concise write-up** of the analysis (suitable for a portfolio or blog intro). Setup, data zip, and the file tree are in **Repository & how to run** at the end.
 
+## Blog
+
+- GitHub Pages: [https://rainny-r.github.io/stackoverflow-ai-analysis/](https://rainny-r.github.io/stackoverflow-ai-analysis/)
+
 ## Overview
 
 This project analyzes survey data from nearly 50,000 developers worldwide to understand how and why developers accept or resist AI tools in their work.  

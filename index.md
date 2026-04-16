@@ -4,12 +4,31 @@ title: "What Drives Developers to Accept AI Tools?"
 description: "A machine learning analysis of Stack Overflow Developer Survey 2025"
 ---
 
+<style>
+  /* Blog heading style enhancements */
+  h2 {
+    background: #eef6ff;
+    border-left: 6px solid #2f6feb;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-top: 1.8rem;
+  }
+
+  h3 {
+    background: #f5f8ff;
+    border-left: 4px solid #6ea8fe;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 1.2rem;
+  }
+</style>
+
 # What Drives Developers to Accept AI Tools?
 
 This post summarizes a machine learning project based on the **Stack Overflow Developer Survey 2025**.  
 Using responses from nearly **50,000 developers**, the goal is to understand what drives AI-tool acceptance at work and provide actionable insights for teams building developer AI products.
 
-## TL;DR
+## Key Findings
 
 - The strongest predictor of AI acceptance is **AI integration priority**.
 - **Work experience has minimal impact** on acceptance.

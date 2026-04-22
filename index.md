@@ -21,7 +21,19 @@ description: "A machine learning analysis of Stack Overflow Developer Survey 202
     padding: 8px 12px;
     margin-top: 1.2rem;
   }
+
+  .project-cover {
+    width: 100%;
+    max-width: 920px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.75rem auto;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
+  }
 </style>
+
+<img src="images/project_cover.png" alt="Project cover: What drives developers to accept AI tools — Stack Overflow Developer Survey 2025 machine learning analysis" class="project-cover" />
 
 # What Drives Developers to Accept AI Tools?
 
@@ -64,12 +76,12 @@ Build a machine learning model to predict developers' AI acceptance level (**Low
 **Source**: Stack Overflow Developer Survey 2025 (49,191 developers worldwide)
 
 **Pipeline**:
-- Clean responses and retain rows with complete AI-related fields
+- **Data cleaning**: Keep only columns needed for the label and model, then drop rows missing any of the five AI fields used in the composite score (so missing answers are not treated as low acceptance). Drop rows again if any predictor is missing—tech-endorsement ranks and related fields are not imputed. The notebook prints how many rows each step removes.
 - Construct an **AI acceptance** label (Low/Medium) from multiple survey items
 - Build features from tech-endorsement scores, work experience, age, and education encoding
 - Train a **Random Forest** classifier with train/test split and **grid-search hyperparameter tuning**
 
-Charts and metrics shown here come from `StackOverFlow_Survey_Analysis(ver.2).ipynb` (recommended notebook).
+Charts and metrics shown here come from `StackOverFlow_Survey_Analysis.ipynb`.
 
 ---
 
@@ -148,6 +160,6 @@ Charts and metrics shown here come from `StackOverFlow_Survey_Analysis(ver.2).ip
 ## Project Links
 
 - Repository: [Machine Learning Final Project](./)
-- Main notebook: `StackOverFlow_Survey_Analysis(ver.2).ipynb`
+- Main notebook: `StackOverFlow_Survey_Analysis.ipynb`
 - Data source: [Stack Overflow Annual Developer Survey 2025](https://insights.stackoverflow.com/survey)
 

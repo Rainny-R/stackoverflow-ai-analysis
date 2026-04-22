@@ -1,5 +1,9 @@
 # README
 
+<p align="center">
+  <img src="images/project_cover.png" alt="Project cover: What drives developers to accept AI tools — Stack Overflow Developer Survey 2025 machine learning analysis" width="100%" style="max-width: 920px; border-radius: 12px;" />
+</p>
+
 This document serves both as **repository documentation** and a **concise write-up** of the analysis (suitable for a portfolio or blog intro). Setup, data zip, and the file tree are in **Repository & how to run** at the end.
 
 ## Blog
@@ -36,7 +40,9 @@ One-line summary of answers to the three questions is in **Final takeaways** (be
 
 **Source**: Stack Overflow Developer Survey 2025 — 49,191 developers worldwide.
 
-**Pipeline (full detail in the notebook)**: Responses are cleaned and restricted to rows with complete AI-related fields; an **AI acceptance** label (Low / Medium) is derived from multiple survey items; features include tech-endorsement scores, work experience, age, and education encoding. A **Random Forest** classifier is trained with a train/test split and **hyperparameter tuning** (grid search). Charts and metrics in this README come from `StackOverFlow_Survey_Analysis(ver.2).ipynb` (recommended); an earlier exploration lives in `StackOverFlow_Survey_Analysis.ipynb`.
+**Pipeline (full detail in the notebook)**: Responses are cleaned and restricted to rows with complete AI-related fields; an **AI acceptance** label (Low / Medium) is derived from multiple survey items; features include tech-endorsement scores, work experience, age, and education encoding. A **Random Forest** classifier is trained with a train/test split and **hyperparameter tuning** (grid search). Charts and metrics in this README come from `StackOverFlow_Survey_Analysis.ipynb`.
+
+**Data cleaning (why rows are removed)**: The notebook uses **complete-case** rules instead of imputation. Rows missing **any** of the five AI questions that define the composite score are dropped so that “skipped” items are not read as low acceptance. A second pass drops rows missing **any** model predictor (tech-endorsement ranks, work experience, encoded age or education), because filling ordinal survey fields would be arbitrary. Before/after row counts are printed in §3.2–3.3 of the notebook.
 
 ---
 
@@ -110,8 +116,7 @@ Place the Stack Overflow survey archive in the project root (same folder as the 
 
 ```
 Machine_Learning_FinalProject/
-├── StackOverFlow_Survey_Analysis(ver.2).ipynb   # Current analysis & modeling (recommended)
-├── StackOverFlow_Survey_Analysis.ipynb          # Earlier notebook version
+├── StackOverFlow_Survey_Analysis.ipynb          # Analysis & modeling notebook
 ├── README.md
 ├── requirements.txt                             # Python dependencies (install with pip)
 ├── images/                                      # Exported charts for this README

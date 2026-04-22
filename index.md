@@ -2,6 +2,8 @@
 layout: default
 title: "What Drives Developers to Accept AI Tools?"
 description: "A machine learning analysis of Stack Overflow Developer Survey 2025"
+# Bump when you need GitHub Pages to pick up content without waiting on CDN/browser cache.
+revision: 2026-04-22
 ---
 
 <style>

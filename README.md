@@ -40,7 +40,7 @@ One-line summary of answers to the three questions is in **Final takeaways** (be
 
 **Source**: Stack Overflow Developer Survey 2025 — 49,191 developers worldwide.
 
-**Pipeline (full detail in the notebook)**: Responses are cleaned and restricted to rows with complete AI-related fields; an **AI acceptance** label (Low / Medium) is derived from multiple survey items; features include tech-endorsement scores, work experience, age, and education encoding. A **Random Forest** classifier is trained with a train/test split and **hyperparameter tuning** (grid search). Charts and metrics in this README come from `StackOverFlow_Survey_Analysis.ipynb`.
+**Flow (full detail in the notebook)**: Responses are cleaned and restricted to rows with complete AI-related fields; an **AI acceptance** label (Low / Medium) is derived from multiple survey items; features include tech-endorsement scores, work experience, age, and education encoding. A **Random Forest** classifier is trained with a train/test split and **hyperparameter tuning** (grid search). Charts and metrics in this README come from `StackOverFlow_Survey_Analysis.ipynb`.
 
 **Data cleaning (why rows are removed)**: The notebook uses **complete-case** rules instead of imputation. Rows missing **any** of the five AI questions that define the composite score are dropped so that “skipped” items are not read as low acceptance. A second pass drops rows missing **any** model predictor (tech-endorsement ranks, work experience, encoded age or education), because filling ordinal survey fields would be arbitrary. Before/after row counts are printed in §3.2–3.3 of the notebook.
 

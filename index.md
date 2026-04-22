@@ -75,7 +75,7 @@ Build a machine learning model to predict developers' AI acceptance level (**Low
 
 **Source**: Stack Overflow Developer Survey 2025 (49,191 developers worldwide)
 
-**Pipeline**:
+**Flow**:
 - **Data cleaning**: Keep only columns needed for the label and model, then drop rows missing any of the five AI fields used in the composite score (so missing answers are not treated as low acceptance). Drop rows again if any predictor is missing—tech-endorsement ranks and related fields are not imputed. The notebook prints how many rows each step removes.
 - Construct an **AI acceptance** label (Low/Medium) from multiple survey items
 - Build features from tech-endorsement scores, work experience, age, and education encoding
